@@ -2,9 +2,9 @@ import OpenAI from 'openai';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 import { NextResponse } from 'next/server';
 
-const OPENAI_API_KEY='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';
+
 const openai = new OpenAI({
-  apiKey: OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
  
 export const runtime = 'edge';
